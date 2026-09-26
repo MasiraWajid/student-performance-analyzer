@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Performance Analyzer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+
+    <!-- ================================
+         SIDEBAR
+    ================================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                SP
+            </div>
+
+            <div>
+                <h2>Student</h2>
+                <span>Analyzer</span>
+            </div>
+
+        </div>
+
+
+        <nav class="navigation">
+
+            <a href="#" class="nav-item active">
+                <span>▦</span>
+                Dashboard
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>♙</span>
+                Students
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>◈</span>
+                Analytics
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>⚠</span>
+                At Risk
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="#" class="nav-item">
+                <span>⚙</span>
+                Settings
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================================
+         MAIN CONTENT
+    ================================= -->
+
+    <main class="main">
+
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Dashboard</h1>
+
+                <p>
+                    Monitor and analyze student performance
+                </p>
+
+            </div>
+
+
+            <button class="add-btn" id="openModal">
+
+                + Add Student
+
+            </button>
+
+        </header>
+
+
+
+        <!-- WELCOME -->
+
+        <section class="welcome">
+
+            <div>
+
+                <h2>Good evening</h2>
+
+                <p>
+                    Here's an overview of your students'
+                    academic performance.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================
+             STATISTICS
+        ================================= -->
+
+        <section class="stats">
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    👥
+                </div>
+
+                <div>
+
+                    <p>Total Students</p>
+
+                    <h3>120</h3>
+
+                    <span class="positive">
+                        +8.2% this month
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    %
+                </div>
+
+                <div>
+
+                    <p>Class Average</p>
+
+                    <h3>74.6%</h3>
+
+                    <span class="positive">
+                        +3.4% improvement
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    ✓
+                </div>
+
+                <div>
+
+                    <p>Pass Rate</p>
+
+                    <h3>87%</h3>
+
+                    <span class="positive">
+                        +2.1% this month
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon risk-icon">
+                    !
+                </div>
+
+                <div>
+
+                    <p>At Risk</p>
+
+                    <h3>12</h3>
+
+                    <span class="negative">
+                        Needs attention
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ================================
+             CHARTS
+        ================================= -->
+
+        <section class="dashboard-grid">
+
+
+            <!-- PERFORMANCE -->
+
+            <div class="card performance-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h3>
+                            Performance Overview
+                        </h3>
+
+                        <p>
+                            Average class performance
+                        </p>
+
+                    </div>
+
+
+                    <select>
+
+                        <option>
+                            Last 6 Months
+                        </option>
+
+                        <option>
+                            Last 3 Months
+                        </option>
+
+                        <option>
+                            This Year
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <div class="chart">
+
+                    <div class="chart-bars">
+
+                        <div class="bar" style="height:45%">
+                            <span>62%</span>
+                        </div>
+
+                        <div class="bar" style="height:55%">
+                            <span>66%</span>
+                        </div>
+
+                        <div class="bar" style="height:65%">
+                            <span>70%</span>
+                        </div>
+
+                        <div class="bar" style="height:72%">
+                            <span>72%</span>
+                        </div>
+
+                        <div class="bar" style="height:82%">
+                            <span>75%</span>
+                        </div>
+
+                        <div class="bar" style="height:90%">
+                            <span>78%</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="chart-labels">
+
+                        <span>Apr</span>
+                        <span>May</span>
+                        <span>Jun</span>
+                        <span>Jul</span>
+                        <span>Aug</span>
+                        <span>Sep</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- GRADE DISTRIBUTION -->
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h3>
+                            Grade Distribution
+                        </h3>
+
+                        <p>
+                            Students by grade
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="grades">
+
+
+                    <div class="grade-row">
+
+                        <span>A+</span>
+
+                        <div class="progress">
+                            <div style="width:82%"></div>
+                        </div>
+
+                        <strong>18</strong>
+
+                    </div>
+
+
+
+                    <div class="grade-row">
+
+                        <span>A</span>
+
+                        <div class="progress">
+                            <div style="width:70%"></div>
+                        </div>
+
+                        <strong>26</strong>
+
+                    </div>
+
+
+
+                    <div class="grade-row">
+
+                        <span>B</span>
+
+                        <div class="progress">
+                            <div style="width:55%"></div>
+                        </div>
+
+                        <strong>34</strong>
+
+                    </div>
+
+
+
+                    <div class="grade-row">
+
+                        <span>C</span>
+
+                        <div class="progress">
+                            <div style="width:38%"></div>
+                        </div>
+
+                        <strong>24</strong>
+
+                    </div>
+
+
+
+                    <div class="grade-row">
+
+                        <span>F</span>
+
+                        <div class="progress">
+                            <div style="width:15%"></div>
+                        </div>
+
+                        <strong>6</strong>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ================================
+             STUDENTS
+        ================================= -->
+
+        <section class="card students-card">
+
+            <div class="card-header">
+
+                <div>
+
+                    <h3>
+                        Students Requiring Attention
+                    </h3>
+
+                    <p>
+                        Students who may need additional support
+                    </p>
+
+                </div>
+
+
+                <a href="#">
+                    View all →
+                </a>
+
+            </div>
+
+
+
+            <div class="student-table">
+
+
+                <div class="table-header">
+
+                    <span>Student</span>
+                    <span>Performance</span>
+                    <span>Weak Subject</span>
+                    <span>Status</span>
+
+                </div>
+
+
+
+                <div class="table-row">
+
+                    <div class="student-info">
+
+                        <div class="avatar">
+                            HK
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Hiba Khan
+                            </strong>
+
+                            <small>
+                                Roll No. 103
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <strong>
+                        38%
+                    </strong>
+
+                    <span>
+                        Mathematics
+                    </span>
+
+                    <span class="status danger">
+                        At Risk
+                    </span>
+
+                </div>
+
+
+
+                <div class="table-row">
+
+                    <div class="student-info">
+
+                        <div class="avatar">
+                            SA
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Sara Ahmed
+                            </strong>
+
+                            <small>
+                                Roll No. 108
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <strong>
+                        44%
+                    </strong>
+
+                    <span>
+                        Programming
+                    </span>
+
+                    <span class="status danger">
+                        At Risk
+                    </span>
+
+                </div>
+
+
+
+                <div class="table-row">
+
+                    <div class="student-info">
+
+                        <div class="avatar">
+                            AM
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Ayesha Malik
+                            </strong>
+
+                            <small>
+                                Roll No. 112
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <strong>
+                        51%
+                    </strong>
+
+                    <span>
+                        DBMS
+                    </span>
+
+                    <span class="status warning">
+                        Needs Focus
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+
+<!-- =========================================
+     ADD STUDENT MODAL
+========================================= -->
+
+<div class="modal-overlay" id="studentModal">
+
+
+    <div class="modal">
+
+
+        <div class="modal-header">
+
+            <div>
+
+                <h2>
+                    Add New Student
+                </h2>
+
+                <p>
+                    Enter the student's academic details
+                </p>
+
+            </div>
+
+
+            <button
+                class="close-btn"
+                id="closeModal"
+                type="button"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+
+        <form id="studentForm">
+
+
+            <!-- NAME -->
+
+            <div class="form-group">
+
+                <label>
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Enter student's name"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- ROLL NUMBER -->
+
+            <div class="form-group">
+
+                <label>
+                    Roll Number
+                </label>
+
+                <input
+                    type="text"
+                    id="rollNumber"
+                    placeholder="Enter roll number"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- MARKS -->
+
+            <div class="marks-grid">
+
+
+                <div class="form-group">
+
+                    <label>
+                        Mathematics
+                    </label>
+
+                    <input
+                        type="number"
+                        id="maths"
+                        min="0"
+                        max="100"
+                        placeholder="0 - 100"
+                        required
+                    >
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label>
+                        Java
+                    </label>
+
+                    <input
+                        type="number"
+                        id="java"
+                        min="0"
+                        max="100"
+                        placeholder="0 - 100"
+                        required
+                    >
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label>
+                        DBMS
+                    </label>
+
+                    <input
+                        type="number"
+                        id="dbms"
+                        min="0"
+                        max="100"
+                        placeholder="0 - 100"
+                        required
+                    >
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label>
+                        Web Technology
+                    </label>
+
+                    <input
+                        type="number"
+                        id="web"
+                        min="0"
+                        max="100"
+                        placeholder="0 - 100"
+                        required
+                    >
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label>
+                        AI / ML
+                    </label>
+
+                    <input
+                        type="number"
+                        id="aiml"
+                        min="0"
+                        max="100"
+                        placeholder="0 - 100"
+                        required
+                    >
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- BUTTONS -->
+
+            <div class="form-actions">
+
+
+                <button
+                    type="button"
+                    class="cancel-btn"
+                    id="cancelModal"
+                >
+                    Cancel
+                </button>
+
+
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+                    Add Student
+                </button>
+
+
+            </div>
+
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="js/app.js"></script>
+
+
+</body>
+
+</html>
